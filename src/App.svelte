@@ -6,7 +6,7 @@
         chrome.tabs.getSelected(null, (tab) => {
             let url = tab.url.split('?')
             let base = url[0];
-            let newUrl = base + `?${values.display}${values.design}${values.theme}`
+            let newUrl = base + `?format=${values.design}${values.display}${values.theme}`
             chrome.tabs.update(tab.id, { url: newUrl })
         }) 
     })

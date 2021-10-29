@@ -4,9 +4,10 @@
 	import { ArticleDesign, ArticleDisplay, ArticlePillar, ArticleSpecial, ArticleFormat } from "@guardian/libs";
     import { format } from './stores'
 
-	let oldValues: ArticleFormat;
 
 	function handleChange(e) {
+		let oldValues: ArticleFormat;
+
         format.subscribe(values => { oldValues = values })
         format.set({...oldValues,[e.target.name]: e.target.value })
     }
