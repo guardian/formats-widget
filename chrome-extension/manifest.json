@@ -1,12 +1,18 @@
 {
-  "name": "Counter App",
+  "name": "Format widget",
   "version": "1.0",
-  "description": "Counter example app",
+  "description": "Widget to change design on GU articles",
   "permissions": [
     "activeTab"
   ],
   "browser_action": {
-    "default_popup": "popup.html"
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "/images/gu-red.png"
+    },
+    "icons": {
+      "16": "/images/gu-red.png"
+    }
   },
   "manifest_version": 2
 }
