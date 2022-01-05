@@ -1,5 +1,6 @@
-
 # Formats Widget
+
+https://user-images.githubusercontent.com/77005274/148268274-2e75016a-1e19-481c-8590-82c7ad16eef7.mov
 
 ### What is Format?
 The core premise of Format is that each article has a Design, Display and Theme value. Design relates to the type of article (analysis, interview, letter, match report etc), Display relates to whether an article is Immersive or Showcase, and Theme relates to the Pillar colours used on components such as the Standfirst or Headline. The 497 different combinations of these three types covers all article designs at The Guardian.
@@ -16,6 +17,10 @@ With a few small adjustments it’s relatively trivial to override the Format va
 
 The obvious mechanism to change these query parameters is by using a widget, it also provides a test case for potentially at a later point  adding this functionality to Teleporter.
 
+### How to use it?
+
+Currently the widget requires an adapted version of Apps-Rendering to allow the query params to drive the article styles. If you are interested in how this works please leave a comment.
+
 # Building your chrome extension
 
 Run the following commands: 
@@ -23,5 +28,8 @@ Run the following commands:
 npm i
 npm run build
 ```
+
+
+
 
 Your extension build will be available within the `public` folder.
